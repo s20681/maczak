@@ -1,0 +1,31 @@
+spring:
+  config:
+    activate:
+      on-profile: development
+my:
+  custom:
+    property:
+      development-mode
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: production
+my:
+  custom:
+    property:
+      production-mode
+
+---
+
+#default:
+#  property:
+#    something
+
+initiate:
+    beans:
+      false
+
+
